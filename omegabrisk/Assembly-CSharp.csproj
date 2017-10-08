@@ -58,6 +58,7 @@
      <Compile Include="Assets\scripts\endscore.cs" />
      <Compile Include="Assets\scripts\FollowPlayer.cs" />
      <Compile Include="Assets\scripts\GenerationRoad.cs" />
+     <Compile Include="Assets\scripts\Health.cs" />
      <Compile Include="Assets\scripts\HitCar.cs" />
      <Compile Include="Assets\scripts\HitTruck.cs" />
      <Compile Include="Assets\scripts\Hospital.cs" />

@@ -18,10 +18,12 @@ public class PlayerControl : MonoBehaviour{
 	private RaycastHit2D car;
 	private int h;
 	private Vector2 forceAdded;
+	public GameObject healthUI;
 
 	void Awake(){
 		// Setting up references.
 		groundCheck = transform.Find("groundCheck");
+		healthUI = GameObject.FindGameObjectWithTag("MainCamera");
 	}
 
 
@@ -128,6 +130,7 @@ public class PlayerControl : MonoBehaviour{
 	void Hit(int dmg){
 		if (immun <= 0) {
 			hp -= dmg;
+			healthUI.SendMessage("changeValue", hp);
 			immun = 2f;
 			print ("hp : " + hp);
 			if (hp <= 0) {
