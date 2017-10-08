@@ -16,7 +16,6 @@ public class CarCreator : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		deltaTime += Time.deltaTime;
-		print (deltaTime);
 		if (deltaTime > frequency) {
 			if (Random.Range (0, 10) <= 1) {
 				Instantiate (cps, GetComponent<Transform> ().position - new Vector3 (30, 0, 0), Quaternion.identity);

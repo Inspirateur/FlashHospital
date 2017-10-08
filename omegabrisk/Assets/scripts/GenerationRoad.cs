@@ -9,7 +9,7 @@ public class GenerationRoad : MonoBehaviour {
 	public Transform cps; //(camion c'est pas sorcier) tuuut
 	public Transform cardtor;
 	public Transform carctor;
-	public int diff;
+	private int diff;
 	public int roadSize;
 	public int angleLimit;
 	public int angleVar;
@@ -21,7 +21,7 @@ public class GenerationRoad : MonoBehaviour {
 	private int sheitan;
 	// Use this for initialization
 	void Start () {
-		counterText = GetComponent<Text> () as Text;
+		diff = PlayerPrefs.GetInt ("difficulte");
 		vehicleFreq = diff / 3f;
 		cpsFreq = diff / 10f;
 		x = 0;

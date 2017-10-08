@@ -13,7 +13,6 @@ public class CarDestructor : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D col){
 		if (col.gameObject.name == "voiture(Clone)" || col.gameObject.name == "camion(Clone)") {
 			Destroy (col.gameObject);
-			print ("destroyed");
 		}
 	}
 }

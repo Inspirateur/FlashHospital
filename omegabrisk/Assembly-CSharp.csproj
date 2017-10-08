@@ -55,10 +55,16 @@
      <Compile Include="Assets\scripts\CarCreator.cs" />
      <Compile Include="Assets\scripts\CarDestructor.cs" />
      <Compile Include="Assets\scripts\cpsControl.cs" />
+     <Compile Include="Assets\scripts\endscore.cs" />
      <Compile Include="Assets\scripts\FollowPlayer.cs" />
      <Compile Include="Assets\scripts\GenerationRoad.cs" />
      <Compile Include="Assets\scripts\Hospital.cs" />
+     <Compile Include="Assets\scripts\notdestroyaudio.cs" />
+     <Compile Include="Assets\scripts\passage.cs" />
      <Compile Include="Assets\scripts\PlayerControl.cs" />
+     <Compile Include="Assets\scripts\popbuttoninjury.cs" />
+     <Compile Include="Assets\scripts\score.cs" />
+     <Compile Include="Assets\scripts\scoresansscore.cs" />
      <Compile Include="Assets\scripts\Timer.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

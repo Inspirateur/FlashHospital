@@ -154,7 +154,6 @@ MonoBehaviour:
   cps: {fileID: 4327805251460600, guid: 14c17320324dfdc4eb2e8324c4acd50a, type: 2}
   cardtor: {fileID: 4670328484807886, guid: f8d9ff3414f024a4fb2f4196dc833d48, type: 2}
   carctor: {fileID: 4574484835298898, guid: de792adc177251b44b3af6d5971ec182, type: 2}
-  diff: 3
   roadSize: 15
   angleLimit: 20
   angleVar: 10
@@ -276,7 +275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 720310e4196798742a55152751becb4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 150
+  timer: 100
   counterText: {fileID: 409215995}
   seconds: 0
   minutes: 0
@@ -292,7 +291,7 @@ GameObject:
   - component: {fileID: 409215995}
   m_Layer: 5
   m_Name: Text
-  m_TagString: Untagged
+  m_TagString: text
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
