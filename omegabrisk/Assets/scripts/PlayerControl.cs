@@ -6,7 +6,7 @@ public class PlayerControl : MonoBehaviour{
 	public bool facingRight = true;			// For determining which way the player is currently facing.
 	[HideInInspector]
 	public bool jump = false;				// Condition for whether the player should jump.
-
+    public Animator animator;
 
 	public float moveForce;			// Amount of force added to move the player left and right.
 	public float maxSpeed;				// The fastest the player can travel in the x axis.
@@ -29,13 +29,19 @@ public class PlayerControl : MonoBehaviour{
 		grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
 		cared = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Car"));
 		car = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Car"));
-	
+        animator = GetComponent<Animator>();
 
 		// If the jump button is pressed and the player is grounded then the player should jump.
 		if (Input.GetButtonDown ("Jump") && ( grounded || cared) ) {
 			jump = true;
+            animator.SetTrigger("Jumping");
 		}
-	}
+        
+        animator.SetBool("Grounded", (grounded || cared) && !jump);
+        animator.SetBool("Moving", (grounded || cared) && (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.LeftArrow)));
+        animator.SetBool("Falling", !(grounded || cared) && GetComponent<Rigidbody2D>().velocity.y < -1);
+
+    }
 
 
 	void FixedUpdate (){
