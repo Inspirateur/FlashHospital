@@ -1,11 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\endscore.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\Hospital.cs">
     <Files>
-      <File FileName="Assets\scripts\Hospital.cs" Line="35" Column="45" />
-      <File FileName="Assets\scripts\Timer.cs" Line="22" Column="19" />
-      <File FileName="Assets\scripts\score.cs" Line="32" Column="56" />
-      <File FileName="Assets\scripts\endscore.cs" Line="6" Column="22" />
+      <File FileName="Assets\scripts\Hospital.cs" Line="35" Column="47" />
+      <File FileName="Assets\scripts\Timer.cs" Line="21" Column="21" />
+      <File FileName="Assets\scripts\score.cs" Line="36" Column="50" />
+      <File FileName="Assets\scripts\endscore.cs" Line="40" Column="47" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
