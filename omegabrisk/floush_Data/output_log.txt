@@ -1,0 +1,40 @@
+Initialize engine version: 5.6.3p1 (9c92e827232b)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 960M (ID=0x139b)
+    Vendor:   NVIDIA
+    VRAM:     2019 MB
+    Driver:   22.21.13.8541
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\Users\guill\OneDrive\Documents\FlashHospital-master\omegabrisk\floush_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Users\guill\OneDrive\Documents\FlashHospital-master\omegabrisk\floush_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Users\guill\OneDrive\Documents\FlashHospital-master\omegabrisk\floush_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Users\guill\OneDrive\Documents\FlashHospital-master\omegabrisk\floush_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Users\guill\OneDrive\Documents\FlashHospital-master\omegabrisk\floush_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Users\guill\OneDrive\Documents\FlashHospital-master\omegabrisk\floush_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Users\guill\OneDrive\Documents\FlashHospital-master\omegabrisk\floush_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Users\guill\OneDrive\Documents\FlashHospital-master\omegabrisk\floush_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\Users\guill\OneDrive\Documents\FlashHospital-master\omegabrisk\floush_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading D:\Users\guill\OneDrive\Documents\FlashHospital-master\omegabrisk\floush_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.101 seconds
+Platform assembly: D:\Users\guill\OneDrive\Documents\FlashHospital-master\omegabrisk\floush_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Users\guill\OneDrive\Documents\FlashHospital-master\omegabrisk\floush_Data\Managed\System.dll (this message is harmless)
+desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 2.829332 ms
+ca merche pas
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 6.696885 ms
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 281.
+Total: 0.264444 ms (FindLiveObjects: 0.028888 ms CreateObjectMapping: 0.012444 ms MarkObjects: 0.193333 ms  DeleteObjects: 0.029333 ms)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 2b14 -> priority: 1 
+  Thread -> id: 2834 -> priority: 1 
