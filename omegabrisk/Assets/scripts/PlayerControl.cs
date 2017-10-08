@@ -7,7 +7,8 @@ public class PlayerControl : MonoBehaviour{
 	[HideInInspector]
 	public bool jump = false;				// Condition for whether the player should jump.
 
-
+	public int hp;
+	private float immun = 0f;
 	public float moveForce;			// Amount of force added to move the player left and right.
 	public float maxSpeed;				// The fastest the player can travel in the x axis.
 	public float jumpForce;			// Amount of force added when the player jumps.
@@ -34,6 +35,9 @@ public class PlayerControl : MonoBehaviour{
 		// If the jump button is pressed and the player is grounded then the player should jump.
 		if (Input.GetButtonDown ("Jump") && ( grounded || cared) ) {
 			jump = true;
+		}
+		if (immun > 0) {
+			immun -= Time.fixedDeltaTime;
 		}
 	}
 
@@ -119,5 +123,23 @@ public class PlayerControl : MonoBehaviour{
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
+	}
+
+	void Hit(int dmg){
+		if (immun <= 0) {
+			hp -= dmg;
+			immun = 2f;
+			print ("hp : " + hp);
+			if (hp <= 0) {
+				hp = 0;
+				if (PlayerPrefs.GetInt ("ScoreHaut") < PlayerPrefs.GetInt ("ScoreJeu")) {
+					PlayerPrefs.SetInt ("ScoreHaut", PlayerPrefs.GetInt ("ScoreJeu"));
+					PlayerPrefs.SetInt ("ScoreJeu", 0);
+					PlayerPrefs.SetInt ("ScorePersonnes", 0);
+				}
+				//launch passage
+				UnityEngine.SceneManagement.SceneManager.LoadScene ("gameover");
+			}
+		}
 	}
 }

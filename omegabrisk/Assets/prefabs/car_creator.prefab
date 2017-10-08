@@ -78,8 +78,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f59199f522c69f49be04d6a0e9d7ac3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 4030408006684250, guid: cbfc8ee7c55a07a468a2ecddfdaa42c4, type: 2}
-  cps: {fileID: 4327805251460600, guid: 14c17320324dfdc4eb2e8324c4acd50a, type: 2}
+  car: {fileID: 4572624070207096, guid: cbfc8ee7c55a07a468a2ecddfdaa42c4, type: 2}
+  cps: {fileID: 4145188265925494, guid: 14c17320324dfdc4eb2e8324c4acd50a, type: 2}
   frequency: 10
 --- !u!212 &212434029554453440
 SpriteRenderer:
